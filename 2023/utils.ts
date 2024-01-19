@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export const sum = (nums: number[]) => nums.reduce((sum, v) => sum + v, 0)
 
 export const mult = (nums: number[]) => nums.reduce((mult, v) => mult * v, 1)
@@ -49,6 +50,10 @@ export const transpose = (mat: any[][]): any[][] => {
   }
 
   return transposed
+}
+
+export const rotate90 = (mat: any[][]): any[][] => {
+  return mat[0].map((_val, index) => mat.map(row => row[index]).reverse())
 }
 
 export const replaceChar = (str: string, index: number, newChar: string) =>
