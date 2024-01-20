@@ -33,8 +33,8 @@ export const shoelace = (polygon: { x: number, y: number }[]) => {
 }
 
 // Pick's theorem: https://en.wikipedia.org/wiki/Pick%27s_theorem
-export const pickTheorem = (area: number, length: number) => {
-  const i = area + 1 - length/2
+export const pickTheorem = (area: number, boundaryPoints: number) => {
+  const i = area + 1 - boundaryPoints/2
   return i
 }
 
