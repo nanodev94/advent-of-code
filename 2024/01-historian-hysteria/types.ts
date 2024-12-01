@@ -1,0 +1,1 @@
+export type OccurrencesList = {[key:number]: number}
